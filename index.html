@@ -11,12 +11,40 @@
       background-color: orange; /* 背景色をオレンジに */
       color: white;            /* 文字色を白に */
       padding: 1em;            /* 内側の余白 */
-      text-align: center;      /* 文字を中央揃えに */
+    }
+    footer {
+      text-align: center;      /* フッターの文字を中央揃えに */
+    }
+    /* --- ナビゲーションバーのスタイル --- */
+    header nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; /* リストの・を消す */
+      display: flex; /* 横並びにする */
+      justify-content: center; /* 中央揃えにする */
+    }
+    header nav li {
+      margin: 0 1em; /* メニュー間の余白 */
+    }
+    header nav a {
+      color: white; /* リンクの文字色を白に */
+      text-decoration: none; /* リンクの下線を消す */
+    }
+    header nav a:hover {
+      text-decoration: underline; /* マウスを乗せたら下線を表示 */
     }
   </style>
 </head>
 <body>
-  <header>ナビゲーション</header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">自己紹介</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
   <h1>こんにちは！</h1>
   <p>これは自分で作ったWebページです。</p>
   <footer>フッター</footer>
